@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faces In The Trees</title>
+
+    <script src="./jquery-3.6.0.js"async></script>
+    <link rel="stylesheet" href="css/style2.css"/>
+
+    <script src="https://kit.fontawesome.com/9f2f3cddd0.js" crossorigin="anonymous"></script>
+    </head>
+    <STYLE>A {text-decoration: none;} </STYLE>
+    <body>
+      <div class="outer-container">
+        <img src="./Albumart2.jpg" alt="Facesinthetrees" id="background" />
+        <audio src="./dontleaveme.mp3" id="track"></audio>
+      </div>
+      <div class="player-container">
+        <img src="./Albumart2.jpg" alt="Andy Mackay' Faces in the trees cover" id="thumbnail" />
+        <div class="box">
+          <div class="play-pause">
+            <i class="far fa-play-circle fa-3x" id="play"></i>
+            <i class="far fa-pause-circle fa-3x" id="pause"></i>
+          </div>
+          <script>$.ajax({
+            type: "POST", //rest Type
+            dataType: 'jsonp', //mispelled
+            url: "./facesinthetrees.json",
+            async: false,
+            contentType: "application/json; charset=utf-8",
+            success: function (msg) {
+                console.log(msg);                
+            }
+ });</script>
+          <div class="next-prev">
+            <i class="far fa-arrow-alt-circle-left fa-3x" id="prev-track"></i>
+            <i class="far fa-arrow-alt-circle-right fa-3x" id="next-track"></i>
+          </div>
+          <div class="progress-bar">
+            <input type="range" id="progressBar" min="0" max="" value="0" />
+          </div>
+          <div class="track-time">
+            <div id="currentTime"></div>
+            <div id="durationTime"></div>
+          </div>
+        </div>
+      </div>
+     
+      </body>
+      <script src="./script.js" async></script>  
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+{ "playlist": [
+    {
+      "name": "One Sided",
+      "artist": "Andy Mackay",
+      "file": "./1sided.mp3",
+      "thumbnail": "./tumblr_nwfn08QEfZ1tdcowdo2_1280 (1).jpg"
+    },
+    {
+      "name": "Windswept",
+      "artist": "Andy Mackay",
+      "file": "./windswept.mp3",
+      "thumbnail": "./tumblr_nwfn08QEfZ1tdcowdo2_1280 (1).jpg"
+    }
+  ]}
